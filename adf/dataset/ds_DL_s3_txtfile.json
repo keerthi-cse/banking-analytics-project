@@ -1,0 +1,24 @@
+{
+	"name": "ds_DL_s3_txtfile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Datalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "destS3_data_tranform",
+				"fileSystem": "destination-container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

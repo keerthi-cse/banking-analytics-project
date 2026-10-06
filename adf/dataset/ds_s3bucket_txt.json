@@ -1,0 +1,38 @@
+{
+	"name": "ds_s3bucket_txt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Datalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "MultipleRowsIntoSingleRow.txt",
+				"folderPath": "externalS3",
+				"fileSystem": "source-container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ID",
+				"type": "String"
+			},
+			{
+				"name": "Product",
+				"type": "String"
+			},
+			{
+				"name": "Sales",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

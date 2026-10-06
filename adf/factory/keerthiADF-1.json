@@ -1,0 +1,15 @@
+{
+	"name": "keerthiADF-1",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "de513b8d-0158-4952-8240-a0367ca03996",
+		"tenantId": "2a8c00bd-0011-4e6a-b4d1-1e053e47603a"
+	}
+}
